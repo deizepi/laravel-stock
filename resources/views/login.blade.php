@@ -24,7 +24,7 @@
                         <h3 class="panel-title">{{ __("Please Sign In") }}</h3>
                     </div>
                     <div class="panel-body">
-                        <form method="post" action="/{locale}/login" >
+                        <form method="post" action="/login" >
                             {{ csrf_field() }}
                             <fieldset>
                                 <div class="form-group has-feedback {{ $errors->has('email') ? 'has-error' : '' }}">
