@@ -4,7 +4,7 @@
 
 <div class="row">
 	<div class="col-lg-12">
-		<h1 class="page-header">Current Stock</h1>
+		<h1 class="page-header">{{ __("Stock") }}</h1>
 	</div>
 </div>
 
@@ -12,19 +12,19 @@
 	<div class="col-lg-12">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				Stock Data
+				{{ __("Stock Data") }}
 			</div>
 			<div class="panel-body">
 				<table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
 					<thead>
 						<tr>
-							<th>Product Name</th>
-							<th>Units In Stock</th>
-							<th>Units On Orders</th>
-							<th>Units Received</th>
-							<th>Minimum Required</th>
-							<th>Price</th>
-							<th>Status</th>
+							<th>{{ __("Product Name") }}</th>
+							<th>{{ __("Units In Stock") }}</th>
+							<th>{{ __("Units On Orders") }}</th>
+							<th>{{ __("Units Received") }} </th>
+							<th>{{ __("Minimum Required") }}</th>
+							<th>{{ __("Price") }}</th>
+							<th>{{ __("Status") }}</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -36,7 +36,7 @@
 							<td class="center"> {{ $product->units_received }} </td>
 							<td class="center"> {{ $product->minimum_required }} </td>
 							<td class="center"> {{ $product->price }} </td>
-							<td class="center">{{ ($product->units_in_stock <= $product->minimum_required) ? 'Need Reorder' : 'Available' }}</td>
+							<td class="center">{{ ($product->units_in_stock <= $product->minimum_required) ? __("Need Reorder") : __("Available") }}</td>
 						</tr>
 						@endforeach
 					</tbody>

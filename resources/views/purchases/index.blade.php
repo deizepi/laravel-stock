@@ -4,11 +4,11 @@
 
 <div class="row">
 	<div class="col-lg-12">
-		<h1 class="page-header">Incoming Purchases</h1>
+		<h1 class="page-header">{{ __("Incoming Purchases") }}</h1>
 	</div>
 
 	<div class="col-sm-4 form-group">
-		<a class="btn btn-sm btn-primary" href="/purchase/create">Add Data</a>
+		<a class="btn btn-sm btn-primary" href="./purchase/create">{{ __("New Purchase") }}</a>
 	</div>
 </div>
 
@@ -18,18 +18,18 @@
 	<div class="col-lg-12">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				Purchases Data
+				{{ __("Purchases Data") }}
 			</div>
 			<div class="panel-body">
 				<table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
 					<thead>
 						<tr>
-							<th>Product Name</th>
-							<th>Quantity</th>
-							<th>Total Price</th>
-							<th>Supplier Name</th>
-							<th>Purchase Date</th>
-							<th class="center">Actions</th>
+							<th>{{ __("Product Name") }}</th>
+							<th>{{ __("Quantity") }}</th>
+							<th>{{ __("Total Price") }}</th>
+							<th>{{ __("Supplier Name") }}</th>
+							<th>{{ __("Purchase Date") }}</th>
+							<th class="center">{{ __("Actions") }}</th>
 						</tr>
 					</thead>
 					<tbody>

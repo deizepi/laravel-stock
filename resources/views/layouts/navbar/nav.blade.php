@@ -6,7 +6,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">Inventory Management System</a>
+        <a class="navbar-brand" href="index.html">{{ __("Inventory Management System") }}</a>
     </div>
 
     @include('layouts.navbar.top-nav')
@@ -16,7 +16,7 @@
             <ul class="nav" id="side-menu">
                 <li class="sidebar-search">
                     <div class="input-group custom-search-form">
-                        <input type="text" class="form-control" placeholder="Search...">
+                        <input type="text" class="form-control" placeholder="{{ __('Search') }}...">
                          <span class="input-group-btn">
                             <button class="btn btn-default" type="button">
                                 <i class="fa fa-search"></i>
@@ -25,22 +25,22 @@
                     </div>                            
                 </li>                        
                 <li>
-                    <a href="/stock"><i class="fa fa-dashboard fa-fw"></i> Current Stock</a>
+                    <a href="/stock"><i class="fa fa-dashboard fa-fw"></i> {{ __("Stock") }}</a>
                 </li>
                 <li>
-                    <a href="/order"><i class="fa fa-shopping-cart fa-fw"></i> Outgoing Order</a>
+                    <a href="/order"><i class="fa fa-shopping-cart fa-fw"></i> {{ __("Outcoming Orders") }}</a>
                 </li>
                 <li>
-                    <a href="/purchase"><i class="fa fa-truck fa-fw"></i> Incoming Purchase</a>
+                    <a href="/purchase"><i class="fa fa-truck fa-fw"></i> {{ __("Incoming Purchases") }}</a>
                 </li>
                 <li>
-                    <a href="/product"><i class="fa fa-cubes fa-fw"></i> Products Management</a>
+                    <a href="/product"><i class="fa fa-cubes fa-fw"></i> {{ __("Products Management") }}</a>
                 </li>
                 <li>
-                    <a href="/supplier"><i class="fa fa-building fa-fw"></i> Suppliers Management</a>
+                    <a href="/supplier"><i class="fa fa-building fa-fw"></i> {{ __("Suppliers Management") }}</a>
                 </li>
                 <li>
-                    <a href="/customer"><i class="fa fa-group fa-fw"></i> Customers Management</a>
+                    <a href="/customer"><i class="fa fa-group fa-fw"></i> {{ __("Customers Management") }}</a>
                 </li>                              
             </ul>
         </div>

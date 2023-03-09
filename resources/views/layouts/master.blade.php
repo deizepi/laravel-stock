@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>Inventory Management System</title>
+    <title>{{ __("Inventory Management System") }}</title>
 
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
@@ -52,7 +52,31 @@
     <script>
     $(document).ready(function() {
         $('#dataTables-example').DataTable({
-            responsive: true
+            responsive: true,
+            language: {
+                decimal:        "{{ __('__separatorDecimal__') }}",
+                emptyTable:     "{{ __('No data available in table') }}",
+                info:           "{{ __('Showing X to Y of Z entries') }}",
+                infoEmpty:      "{{ __('Showing X to Y of Z entries') }}",
+                infoFiltered:   "({{ __('filtered from X total entries') }})",
+                infoPostFix:    "",
+                thousands:      "{{ __('__separatorThousands__') }}",
+                lengthMenu:     "{{ __('Show X entries') }}",
+                loadingRecords: "{{ __('Loading') }}...",
+                processing:     "",
+                search:         "{{ __('Search') }}:",
+                zeroRecords:    "{{ __('No matching records found') }}",
+                paginate: {
+                    first:      "{{ __('First') }}",
+                    last:       "{{ __('Last') }}",
+                    next:       "{{ __('Next') }}",
+                    previous:   "{{ __('Previous') }}"
+                },
+                aria: {
+                    sortAscending:  ": {{ __('activate to sort column ascending') }}",
+                    sortDescending: ": {{ __('activate to sort column descending') }}"
+                }
+            }
         });
     });
 

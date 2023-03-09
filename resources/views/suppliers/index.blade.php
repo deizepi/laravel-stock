@@ -4,11 +4,11 @@
 
 <div class="row">
 	<div class="col-lg-12">
-		<h1 class="page-header">Suppliers Management</h1>
+		<h1 class="page-header">{{ __("Suppliers Management") }}</h1>
 	</div>	
 
 	<div class="col-sm-4 form-group">
-		<a class="btn btn-sm btn-primary" href="/supplier/create">Add Data</a>
+		<a class="btn btn-sm btn-primary" href="./supplier/create">{{ __("New Supplier") }}</a>
 	</div>
 </div>
 
@@ -18,17 +18,17 @@
 	<div class="col-lg-12">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				Suppliers Data
+				{{ __("Suppliers Data") }}
 			</div>
 			<div class="panel-body">
 				<table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
 					<thead>
 						<tr>
-							<th>No</th>
-							<th>Supplier Name</th>
-							<th>Address</th>
-							<th>E-mail</th>
-							<th class="center">Actions</th>
+							<th>#</th>
+							<th>{{ __("Supplier Name") }}</th>
+							<th>{{ __("Address") }}</th>
+							<th>{{ __("E-mail") }}</th>
+							<th class="center">{{ __("Actions") }}</th>
 						</tr>
 					</thead>
 					<tbody>

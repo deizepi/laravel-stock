@@ -8,7 +8,7 @@
         <ul class="dropdown-menu dropdown-user">            
             
             <li>
-                <a href="/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                <a href="/logout"><i class="fa fa-sign-out fa-fw"></i> {{ __("Logout") }}</a>
             </li>
 
         </ul>

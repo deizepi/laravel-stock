@@ -4,11 +4,11 @@
 
 <div class="row">
 	<div class="col-lg-12">
-		<h1 class="page-header">Products Management</h1>
+		<h1 class="page-header">{{ __("Products Management") }}</h1>
 	</div>
 
 	<div class="col-sm-4 form-group">
-		<a class="btn btn-sm btn-primary" href="/product/create">Add Data</a>
+		<a class="btn btn-sm btn-primary" href="./product/create">{{ __("New Product") }}</a>
 	</div>
 </div>
 
@@ -18,19 +18,19 @@
 	<div class="col-lg-12">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				Products Data
+				{{ __("Products Data") }}
 			</div>
 			<div class="panel-body">
 				<table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
 					<thead>						
 						<tr>
-							<th>Product Name</th>
-							<th>Units In Stock</th>
-							<th>Units On Orders</th>
-							<th>Units Received</th>
-							<th>Minimum Required</th>
-							<th>Price</th>
-							<th class="center">Actions</th>
+							<th>{{ __("Product Name") }}</th>
+							<th>{{ __("Units In Stock") }}</th>
+							<th>{{ __("Units On Orders") }}</th>
+							<th>{{ __("Units Received") }}</th>
+							<th>{{ __("Minimum Required") }}</th>
+							<th>{{ __("Price") }}</th>
+							<th class="center">{{ __("Actions") }}</th>
 						</tr>
 					</thead>
 					<tbody>
