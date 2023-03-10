@@ -4,7 +4,7 @@
 
 <div class="row">
 	<div class="col-lg-12">
-		<h1 class="page-header">Edit Purchase Data</h1>
+		<h1 class="page-header">{{ __("Edit Purchase") }}</h1>
 	</div>
 </div>
 
@@ -12,7 +12,7 @@
 	<div class="col-lg-12">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				Purchase Form
+				{{ __("Purchase Form") }}
 			</div>
 			<div class="panel-body">
 				<form action="/purchase/{{ $purchase->id }}" method="post">
@@ -35,7 +35,7 @@
 					</div>
 
 					<div class="form-group has-feedback {{ $errors->has('quantity') ? 'has-error' : '' }}">
-						<label>Quantity</label>
+						<label>{{ __("Quantity") }}</label>
 						<input placeholder="Input quantity" min="1" class="form-control" value="{{ $purchase->quantity }}" type="number" name="quantity">
 						@if($errors->has('quantity'))
 						<span class="help-block"> {{ $errors->first('quantity') }}</span>
@@ -43,7 +43,7 @@
 					</div>
 
 					<div class="form-group has-feedback {{ $errors->has('purchase_date') ? 'has-error' : '' }}">
-						<label>Purchase Date</label>
+						<label>{{ __("Purchase Date") }}</label>
 						<input value="{{ $purchase->purchase_date->format('Y-m-d') }}" class="form-control" type="date" name="purchase_date">
 						@if($errors->has('purchase_date'))
 						<span class="help-block"> {{ $errors->first('purchase_date') }}</span>
@@ -51,9 +51,9 @@
 					</div>
 
 					<div class="form-group has-feedback {{ $errors->has('supplier_id') ? 'has-error' : '' }}">
-						<label>Supplier Name</label>
+						<label>{{ __("Supplier Name") }}</label>
 						<select class="form-control" type="text" name="supplier_id">
-							<option value="" disabled selected>Select Supplier</option>
+							<option value="" disabled selected>{{ __("Select Supplier") }}</option>
 							@foreach($suppliers as $supplier)
 							<option {{ $supplier->id == $purchase->supplier->id ? 'selected' : '' }} value="{{ $supplier->id }}"> {{ $supplier->name }} </option>
 							@endforeach
@@ -64,7 +64,7 @@
 					</div>	
 
 					<div class="form-group">
-						<button class="btn btn-primary" type="submit">Submit</button>
+						<button class="btn btn-primary" type="submit">{{ __("Submit") }}</button>
 					</div>
 
 				</form>

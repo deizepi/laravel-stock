@@ -43,23 +43,38 @@
   "Customer Name": "Customer Name",
   "Order Date": "Order Date",
   "Actions": "Actions",
+  "Order Form": "Order Form",
+  "Select Product": "Select Product",
+  "Select Customer": "Select Customer",
+  "Submit": "Submit",
+  "Edit Order": "Edit Order",
+  "Save": "Save",
 
   "Incoming Purchases": "Incoming Purchases",
   "New Purchase": "New Purchase",
   "Purchases Data": "Purchases Data",
   "Supplier Name": "Supplier Name",
   "Purchase Date": "Purchase Date",
+  "Purchase Form": "Purchase Form",
+  "Select Supplier": "Select Supplier",
+  "Edit Purchase": "Edit Purchase",
 
   "Products Management": "Products Management",
   "New Product": "New Product",
   "Products Data": "Products Data",
+  "Product Form": "Product Form",
+  "Edit Product": "Edit Product",
   
   "Suppliers Management": "Suppliers Management",
   "New Supplier": "New Supplier",
   "Suppliers Data": "Suppliers Data",
   "Address": "Address",
+  "Supplier Form": "Supplier Form",
+  "Edit Supplier": "Edit Supplier",
 
   "Customers Management": "Customers Management",
   "New Customer": "New Customer",
-  "Customers Data": "Customers Data"
+  "Customers Data": "Customers Data",
+  "Customer Form": "Customer Form",
+  "Edit Customer": "Edit Customer"
 }

@@ -43,23 +43,38 @@
   "Customer Name": "Nome do Cliente",
   "Order Date": "Data do Pedido",
   "Actions": "Ações",
+  "Order Form": "Formulário de Pedido",
+  "Select Product": "Selecionar Produto",
+  "Select Customer": "Selecionar Cliente",
+  "Submit": "Cadastrar",
+  "Edit Order": "Editar Pedido",
+  "Save": "Salvar",
 
   "Incoming Purchases": "Compras",
   "New Purchase": "Nova Compra",
   "Purchases Data": "Relatório de Compras",
   "Supplier Name": "Nome do Fornecedor",
   "Purchase Date": "Data da Compra",
+  "Purchase Form": "Formulário de Compra",
+  "Select Supplier": "Selecionar Fornecedor",
+  "Edit Purchase": "Editar Compra",
 
   "Products Management": "Produtos",
   "New Product": "Novo Produto",
   "Products Data": "Relatório de Produtos",
+  "Product Form": "Formulário de Produto",
+  "Edit Product": "Editar Produto",
   
   "Suppliers Management": "Fornecedores",
   "New Supplier": "Novo Fornecedor",
   "Suppliers Data": "Relatório de Fornecedores",
   "Address": "Endereço",
+  "Supplier Form": "Formulário de Fornecedor",
+  "Edit Supplier": "Editar Fornecedor",
 
   "Customers Management": "Clientes",
   "New Customer": "Novo Cliente",
-  "Customers Data": "Relatório de Clientes"
+  "Customers Data": "Relatório de Clientes",
+  "Customer Form": "Formulário de Cliente",
+  "Edit Customer": "Editar Cliente"
 }
